@@ -30,6 +30,7 @@ class LoginPage extends React.Component {
         e.preventDefault();
 
         this.setState({ submitted: true });
+        console.log(this.state);
         const { username, password } = this.state;
         const { dispatch } = this.props;
         if (username && password) {
